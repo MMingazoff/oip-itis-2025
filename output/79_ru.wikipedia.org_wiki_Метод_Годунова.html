@@ -1,0 +1,2934 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="ru" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Метод Годунова — Википедия</title>
+<script>(function(){var className="client-js";var cookie=document.cookie.match(/(?:^|; )ruwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"],"wgRequestId":"d6e31518-7163-4c75-9f66-3e1808af75e6","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Метод_Годунова","wgTitle":"Метод Годунова","wgCurRevisionId":122144569,"wgRevisionId":122144569,"wgArticleId":2207421,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Википедия:Статьи без сносок","Википедия:Статьи с шаблонами недостатков по алфавиту","Численные методы механики сплошных сред","Вычислительная гидродинамика","Уравнения сохранения"],"wgPageViewLanguage":"ru","wgPageContentLanguage":"ru","wgPageContentModel":"wikitext","wgRelevantPageName":"Метод_Годунова","wgRelevantArticleId":2207421,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":1}}},"wgStableRevisionId":122144569,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"ru","pageLanguageDir":"ltr","pageVariantFallbacks":"ru"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgVector2022LanguageInHeader":false,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q4291826","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.gadget.common-site":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","skins.vector.styles.legacy":"ready","ext.flaggedRevs.basic":"ready","mediawiki.codex.messagebox.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","codex-search-styles":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","ext.gadget.collapserefs","ext.gadget.directLinkToCommons","ext.gadget.referenceTooltips","ext.gadget.logo","ext.gadget.edittop","ext.gadget.navboxDefaultGadgets","ext.gadget.wikibugs","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession","oojs-ui.styles.icons-media","oojs-ui-core.icons"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=codex-search-styles%7Cext.flaggedRevs.basic%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.codex.messagebox.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?lang=ru&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=ext.gadget.common-site&amp;only=styles&amp;skin=vector">
+<link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<noscript><link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=noscript&amp;only=styles&amp;skin=vector"></noscript>
+<meta name="generator" content="MediaWiki 1.44.0-wmf.20">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Метод Годунова — Википедия">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//ru.m.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0">
+<link rel="alternate" type="application/x-wiki" title="Править" href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Википедия (ru)">
+<link rel="EditURI" type="application/rsd+xml" href="//ru.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru">
+<link rel="alternate" type="application/atom+xml" title="Википедия — Atom-лента" href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="login.wikimedia.org">
+</head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Метод_Годунова rootpage-Метод_Годунова skin-vector action-view"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Метод Годунова</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">Материал из Википедии — свободной энциклопедии</div>
+		<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
+		<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
+		<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="ru" dir="ltr"><p><b>Метод Годунова</b>&#160;— реализация схем сквозного счета, с помощью которых можно рассчитывать газодинамические течения с разрывами параметров внутри расчётной области. Эта схема предложена <a href="/wiki/%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2,_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" title="Годунов, Сергей Константинович">С. К. Годуновым</a> в 1959 г. 
+Метод Годунова&#160;— это вариант <a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D0%BE%D0%B1%D1%8A%D1%91%D0%BC%D0%BE%D0%B2" title="Метод конечных объёмов">метода контрольного объёма</a>.
+Потоки через боковые грани определяются из решения <a href="/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B8%D0%BC%D0%B0%D0%BD%D0%B0_%D0%BE_%D1%80%D0%B0%D1%81%D0%BF%D0%B0%D0%B4%D0%B5_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D1%80%D0%B0%D0%B7%D1%80%D1%8B%D0%B2%D0%B0" title="Задача Римана о распаде произвольного разрыва">задачи о распаде произвольного разрыва</a>.
+Поясним на примере.
+</p><p><br />
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="ru" dir="ltr"><h2 id="mw-toc-heading">Содержание</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Пример"><span class="tocnumber">1</span> <span class="toctext">Пример</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Дифференциальная_форма"><span class="tocnumber">1.1</span> <span class="toctext">Дифференциальная форма</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Интегральная_форма"><span class="tocnumber">1.2</span> <span class="toctext">Интегральная форма</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Аппроксимация"><span class="tocnumber">1.3</span> <span class="toctext">Аппроксимация</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Постановка_граничных_условий"><span class="tocnumber">2</span> <span class="toctext">Постановка граничных условий</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Типы_граничных_процедур"><span class="tocnumber">2.1</span> <span class="toctext">Типы граничных процедур</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Неподвижная_жесткая_стенка"><span class="tocnumber">2.1.1</span> <span class="toctext">Неподвижная жесткая стенка</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Резервуар_неограниченной_ёмкости"><span class="tocnumber">2.1.2</span> <span class="toctext">Резервуар неограниченной ёмкости</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Втекающий_сверхзвуковой_поток"><span class="tocnumber">2.1.3</span> <span class="toctext">Втекающий сверхзвуковой поток</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Вытекающий_сверхзвуковой_поток"><span class="tocnumber">2.1.4</span> <span class="toctext">Вытекающий сверхзвуковой поток</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Выбор_параметров_сетки"><span class="tocnumber">3</span> <span class="toctext">Выбор параметров сетки</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Литература"><span class="tocnumber">4</span> <span class="toctext">Литература</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Ссылки"><span class="tocnumber">5</span> <span class="toctext">Ссылки</span></a></li>
+</ul>
+</div>
+
+<div class="mw-heading mw-heading2"><h2 id="Пример"><span id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80"></span>Пример</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=1" title="Редактировать раздел «Пример»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=1" title="Редактировать код раздела «Пример»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Рассмотрим построение численного метода Годунова первого порядка точности на примере решения системы уравнений одномерной нестационарной газовой динамики, записанной в <a href="/wiki/%D0%94%D0%B8%D0%B2%D0%B5%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%BD%D0%B0%D1%8F_%D1%84%D0%BE%D1%80%D0%BC%D0%B0" class="mw-redirect" title="Дивергентная форма">дивергентной форме</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}{\begin{array}{lll}{\frac {\partial \rho }{\partial t}}+{\frac {\partial \rho u}{\partial x}}&amp;=&amp;0\\{\frac {\partial (\rho u)}{\partial t}}+{\frac {\partial (p+\rho u^{2})}{\partial x}}&amp;=&amp;0\\{\frac {\partial E}{\partial t}}+{\frac {\partial u(E+p)}{\partial x}}&amp;=&amp;0\end{array}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtable columnalign="left left left" rowspacing="4pt" columnspacing="1em">
+                      <mtr>
+                        <mtd>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>&#x3c1;<!-- ρ --></mi>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>t</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>&#x3c1;<!-- ρ --></mi>
+                                <mi>u</mi>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>x</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mn>0</mn>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>&#x3c1;<!-- ρ --></mi>
+                                <mi>u</mi>
+                                <mo stretchy="false">)</mo>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>t</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>p</mi>
+                                <mo>+</mo>
+                                <mi>&#x3c1;<!-- ρ --></mi>
+                                <msup>
+                                  <mi>u</mi>
+                                  <mrow class="MJX-TeXAtom-ORD">
+                                    <mn>2</mn>
+                                  </mrow>
+                                </msup>
+                                <mo stretchy="false">)</mo>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>x</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mn>0</mn>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>E</mi>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>t</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                          <mo>+</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>u</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>E</mi>
+                                <mo>+</mo>
+                                <mi>p</mi>
+                                <mo stretchy="false">)</mo>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                                <mi>x</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mn>0</mn>
+                        </mtd>
+                      </mtr>
+                    </mtable>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}{\begin{array}{lll}{\frac {\partial \rho }{\partial t}}+{\frac {\partial \rho u}{\partial x}}&amp;=&amp;0\\{\frac {\partial (\rho u)}{\partial t}}+{\frac {\partial (p+\rho u^{2})}{\partial x}}&amp;=&amp;0\\{\frac {\partial E}{\partial t}}+{\frac {\partial u(E+p)}{\partial x}}&amp;=&amp;0\end{array}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c308951cfe20a1ff078b827549a47a3204199ad3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -6.338ex; width:26.637ex; height:13.843ex;" alt="{\displaystyle {\begin{cases}{\begin{array}{lll}{\frac {\partial \rho }{\partial t}}+{\frac {\partial \rho u}{\partial x}}&amp;=&amp;0\\{\frac {\partial (\rho u)}{\partial t}}+{\frac {\partial (p+\rho u^{2})}{\partial x}}&amp;=&amp;0\\{\frac {\partial E}{\partial t}}+{\frac {\partial u(E+p)}{\partial x}}&amp;=&amp;0\end{array}}\end{cases}}}" /></span></dd></dl>
+<p>Здесь:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \rho }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x3c1;<!-- ρ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f7d439671d1289b6a816e6af7a304be40608d64" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:1.202ex; height:2.176ex;" alt="{\displaystyle \rho }" /></span>&#160;— <a href="/wiki/%D0%9F%D0%BB%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C" title="Плотность">плотность</a></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="{\displaystyle p}" /></span>&#160;— <a href="/wiki/%D0%94%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" title="Давление">давление</a></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3e6bb763d22c20916ed4f0bb6bd49d7470cffd8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle u}" /></span>&#160;— <a href="/wiki/%D0%A1%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C" title="Скорость">скорость</a></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4232c9de2ee3eec0a9c0a19b15ab92daa6223f9b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.776ex; height:2.176ex;" alt="{\displaystyle E}" /></span>&#160;— <a href="/wiki/%D0%9F%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F_%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D1%8F" class="mw-redirect" title="Полная энергия">полная энергия</a> в единице <a href="/wiki/%D0%9E%D0%B1%D1%8A%D1%91%D0%BC" title="Объём">объёма</a></li></ul>
+<p>Заметим, что:
+</p>
+<ul><li>Первое уравнение выражает <a href="/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BC%D0%B0%D1%81%D1%81%D1%8B" title="Закон сохранения массы">закон сохранения массы</a></li>
+<li>Второе уравнение выражает <a href="/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B8%D0%BC%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0" title="Закон сохранения импульса">закон сохранения импульса</a></li>
+<li>Третье уравнение выражает <a href="/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D0%B8" title="Закон сохранения энергии">закон сохранения энергии</a>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E=e+{\frac {\rho u^{2}}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>e</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x3c1;<!-- ρ --></mi>
+              <msup>
+                <mi>u</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E=e+{\frac {\rho u^{2}}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f9b39163b500a4938b2ea4a7cc94d5b3d4a8d4e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:13.22ex; height:5.676ex;" alt="{\displaystyle E=e+{\frac {\rho u^{2}}{2}}}" /></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle e=\rho \varepsilon ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>e</mi>
+        <mo>=</mo>
+        <mi>&#x3c1;<!-- ρ --></mi>
+        <mi>&#x3b5;<!-- ε --></mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle e=\rho \varepsilon ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/176ee46b121929d3294680dd4e2fabb8df3c9cbb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:7.114ex; height:2.176ex;" alt="{\displaystyle e=\rho \varepsilon ,}" /></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon =\varepsilon (p,\rho ),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x3b5;<!-- ε --></mi>
+        <mo>=</mo>
+        <mi>&#x3b5;<!-- ε --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>,</mo>
+        <mi>&#x3c1;<!-- ρ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon =\varepsilon (p,\rho ),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24e3024b8b481712561c688528962f96d2f1fba5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:11.127ex; height:2.843ex;" alt="{\displaystyle \varepsilon =\varepsilon (p,\rho ),}" /></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon ={\frac {1}{\gamma -1}}\cdot {\frac {p}{\rho }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x3b5;<!-- ε --></mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>&#x3b3;<!-- γ --></mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>&#x22c5;<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mi>&#x3c1;<!-- ρ --></mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon ={\frac {1}{\gamma -1}}\cdot {\frac {p}{\rho }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43236d49d3185483a4d797f15e566f10864aba67" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.338ex; width:14ex; height:5.676ex;" alt="{\displaystyle \varepsilon ={\frac {1}{\gamma -1}}\cdot {\frac {p}{\rho }}}" /></span>, где <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x3b3;<!-- γ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a223c880b0ce3da8f64ee33c4f0010beee400b1a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:1.262ex; height:2.176ex;" alt="{\displaystyle \gamma }" /></span>&#160;— <a href="/wiki/%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%B0%D0%B4%D0%B8%D0%B0%D0%B1%D0%B0%D1%82%D1%8B" title="Показатель адиабаты">показатель адиабаты</a></dd></dl></li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Дифференциальная_форма"><span id=".D0.94.D0.B8.D1.84.D1.84.D0.B5.D1.80.D0.B5.D0.BD.D1.86.D0.B8.D0.B0.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D1.84.D0.BE.D1.80.D0.BC.D0.B0"></span>Дифференциальная форма</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=2" title="Редактировать раздел «Дифференциальная форма»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=2" title="Редактировать код раздела «Дифференциальная форма»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Начальная система может быть записана в более компактной форме:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {\partial q}{\partial t}}+{\frac {\partial f}{\partial x}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>q</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>f</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial q}{\partial t}}+{\frac {\partial f}{\partial x}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5395b1c259ad528505a12020b000efd21ba84b7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.005ex; width:13.809ex; height:5.676ex;" alt="{\displaystyle {\frac {\partial q}{\partial t}}+{\frac {\partial f}{\partial x}}=0}" /></span></dd></dl>
+<p>где:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06809d64fa7c817ffc7e323f85997f783dbdf71d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:1.07ex; height:2.009ex;" alt="{\displaystyle q}" /></span>&#160;— вектор консервативных переменных
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q=\left({\begin{array}{c}\rho \\\rho \,u\\E\end{array}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                  <mspace width="thinmathspace"></mspace>
+                  <mi>u</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>E</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q=\left({\begin{array}{c}\rho \\\rho \,u\\E\end{array}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/66f804402e6550f58c8e7d36cbc1efa49768a478" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:11.905ex; height:9.509ex;" alt="{\displaystyle q=\left({\begin{array}{c}\rho \\\rho \,u\\E\end{array}}\right)}" /></span></dd></dl></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="{\displaystyle f}" /></span>&#160;— вектор потоков
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f=\left({\begin{array}{c}\rho \,u\\p+\rho \,u^{2}\\u(E+p)\end{array}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                  <mspace width="thinmathspace"></mspace>
+                  <mi>u</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>p</mi>
+                  <mo>+</mo>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                  <mspace width="thinmathspace"></mspace>
+                  <msup>
+                    <mi>u</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>u</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>E</mi>
+                  <mo>+</mo>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f=\left({\begin{array}{c}\rho \,u\\p+\rho \,u^{2}\\u(E+p)\end{array}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32ccdf0c84b4bb47f557a4aabe33100e5cc0865a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:18.12ex; height:9.509ex;" alt="{\displaystyle f=\left({\begin{array}{c}\rho \,u\\p+\rho \,u^{2}\\u(E+p)\end{array}}\right)}" /></span></dd></dl></li></ul>
+<p><br />
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Интегральная_форма"><span id=".D0.98.D0.BD.D1.82.D0.B5.D0.B3.D1.80.D0.B0.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D1.84.D0.BE.D1.80.D0.BC.D0.B0"></span>Интегральная форма</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=3" title="Редактировать раздел «Интегральная форма»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=3" title="Редактировать код раздела «Интегральная форма»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Вместо дифференциальной формы уравнений выведем новую интегральную форму уравнений, более приспособленную для представления <b>слабого решения</b>. Здесь под <b>слабым решением</b> понимается <a href="/wiki/%D0%9E%D0%B1%D0%BE%D0%B1%D1%89%D1%91%D0%BD%D0%BD%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Обобщённая функция">обобщённая функция</a>, определяемая <a href="/wiki/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5" title="Интегральное уравнение">интегральными равенствами</a>, полученными из соответствующих дифференциальных уравнений и начальных условий задачи. Для этого выделим некоторый контрольный объём <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24b0d5ca6f381068d756f6337c08e0af9d1eeb6f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="{\displaystyle \Omega }" /></span> и проинтегрируем систему уравнений по этому объёму. Применим обобщённую <a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A1%D1%82%D0%BE%D0%BA%D1%81%D0%B0" title="Теорема Стокса">теорему Стокса</a> к полученному интегралу от <a href="/wiki/%D0%94%D0%B8%D0%B2%D0%B5%D1%80%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%8F" title="Дивергенция">дивергенции</a> (при двух независимых переменных это будет <a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D1%80%D0%B8%D0%BD%D0%B0" title="Теорема Грина">теорема Грина</a>, и <a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%B0" class="mw-redirect" title="Формула Остроградского-Гаусса">формула Остроградского-Гаусса</a> в трёхмерном пространстве). При этом <i>введем направление обхода контура против часовой стрелки</i>.
+</p><p><br />
+Отдельно, рассматривая <a href="/wiki/%D0%A3%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B5%D1%80%D0%B0%D0%B7%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8" class="mw-redirect" title="Уравнение неразрывности">уравнение неразрывности</a>, получаем:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \iint \limits _{\Omega }\left({\frac {\partial \rho }{\partial t}}+{\frac {\partial \rho u}{\partial x}}\right)d\,xd\,t=\oint \limits _{\partial \Omega }\rho dx-\rho udt}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x222c;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                  <mi>u</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>x</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>d</mi>
+        <mspace width="thinmathspace"></mspace>
+        <mi>x</mi>
+        <mi>d</mi>
+        <mspace width="thinmathspace"></mspace>
+        <mi>t</mi>
+        <mo>=</mo>
+        <munder>
+          <mo>&#x222e;<!-- ∮ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+          </mrow>
+        </munder>
+        <mi>&#x3c1;<!-- ρ --></mi>
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x3c1;<!-- ρ --></mi>
+        <mi>u</mi>
+        <mi>d</mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iint \limits _{\Omega }\left({\frac {\partial \rho }{\partial t}}+{\frac {\partial \rho u}{\partial x}}\right)d\,xd\,t=\oint \limits _{\partial \Omega }\rho dx-\rho udt}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de80107adeee3f7a301bad8064e05ff4aed6a6b5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:40.727ex; height:7.843ex;" alt="{\displaystyle \iint \limits _{\Omega }\left({\frac {\partial \rho }{\partial t}}+{\frac {\partial \rho u}{\partial x}}\right)d\,xd\,t=\oint \limits _{\partial \Omega }\rho dx-\rho udt}" /></span></dd></dl>
+<p>Для всей системы уравнений
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \iint \limits _{\Omega }\left({\frac {\partial q}{\partial t}}+{\frac {\partial f}{\partial x}}\right)d\,xd\,t=0\Leftrightarrow \oint \limits _{\partial \Omega }(qdx-fdt)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>&#x222c;<!-- ∬ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>q</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>t</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>f</mi>
+                </mrow>
+                <mrow>
+                  <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                  <mi>x</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>d</mi>
+        <mspace width="thinmathspace"></mspace>
+        <mi>x</mi>
+        <mi>d</mi>
+        <mspace width="thinmathspace"></mspace>
+        <mi>t</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo stretchy="false">&#x21d4;<!-- ⇔ --></mo>
+        <munder>
+          <mo>&#x222e;<!-- ∮ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mi>q</mi>
+        <mi>d</mi>
+        <mi>x</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>f</mi>
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iint \limits _{\Omega }\left({\frac {\partial q}{\partial t}}+{\frac {\partial f}{\partial x}}\right)d\,xd\,t=0\Leftrightarrow \oint \limits _{\partial \Omega }(qdx-fdt)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/79f8bc6583d928eda2c402de8f4922f0adffe002" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:48.467ex; height:7.843ex;" alt="{\displaystyle \iint \limits _{\Omega }\left({\frac {\partial q}{\partial t}}+{\frac {\partial f}{\partial x}}\right)d\,xd\,t=0\Leftrightarrow \oint \limits _{\partial \Omega }(qdx-fdt)=0}" /></span></dd></dl>
+<p>Записывая систему в развернутом виде:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}{\begin{array}{lll}\oint \limits _{\partial \Omega }(\rho \;d\,x-\rho u\;d\,t)&amp;=&amp;0\\\oint \limits _{\partial \Omega }(\rho u\;d\,x-(p+\rho u^{2})\;d\,t)&amp;=&amp;0\\\oint \limits _{\partial \Omega }(E\;d\,x-u(p+E)\;d\,t)&amp;=&amp;0\\\end{array}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtable columnalign="left left left" rowspacing="4pt" columnspacing="1em">
+                      <mtr>
+                        <mtd>
+                          <munder>
+                            <mo>&#x222e;<!-- ∮ --></mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+                            </mrow>
+                          </munder>
+                          <mo stretchy="false">(</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mspace width="thickmathspace"></mspace>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace"></mspace>
+                          <mi>x</mi>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mi>u</mi>
+                          <mspace width="thickmathspace"></mspace>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace"></mspace>
+                          <mi>t</mi>
+                          <mo stretchy="false">)</mo>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mn>0</mn>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <munder>
+                            <mo>&#x222e;<!-- ∮ --></mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+                            </mrow>
+                          </munder>
+                          <mo stretchy="false">(</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mi>u</mi>
+                          <mspace width="thickmathspace"></mspace>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace"></mspace>
+                          <mi>x</mi>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>p</mi>
+                          <mo>+</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <msup>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <mo stretchy="false">)</mo>
+                          <mspace width="thickmathspace"></mspace>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace"></mspace>
+                          <mi>t</mi>
+                          <mo stretchy="false">)</mo>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mn>0</mn>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <munder>
+                            <mo>&#x222e;<!-- ∮ --></mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mi mathvariant="normal">&#x3a9;<!-- Ω --></mi>
+                            </mrow>
+                          </munder>
+                          <mo stretchy="false">(</mo>
+                          <mi>E</mi>
+                          <mspace width="thickmathspace"></mspace>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace"></mspace>
+                          <mi>x</mi>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mi>u</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>p</mi>
+                          <mo>+</mo>
+                          <mi>E</mi>
+                          <mo stretchy="false">)</mo>
+                          <mspace width="thickmathspace"></mspace>
+                          <mi>d</mi>
+                          <mspace width="thinmathspace"></mspace>
+                          <mi>t</mi>
+                          <mo stretchy="false">)</mo>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mn>0</mn>
+                        </mtd>
+                      </mtr>
+                    </mtable>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}{\begin{array}{lll}\oint \limits _{\partial \Omega }(\rho \;d\,x-\rho u\;d\,t)&amp;=&amp;0\\\oint \limits _{\partial \Omega }(\rho u\;d\,x-(p+\rho u^{2})\;d\,t)&amp;=&amp;0\\\oint \limits _{\partial \Omega }(E\;d\,x-u(p+E)\;d\,t)&amp;=&amp;0\\\end{array}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f3fdf3e6cfb7630940cff4a37c781df08085f60" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -7.338ex; width:36.347ex; height:15.843ex;" alt="{\displaystyle {\begin{cases}{\begin{array}{lll}\oint \limits _{\partial \Omega }(\rho \;d\,x-\rho u\;d\,t)&amp;=&amp;0\\\oint \limits _{\partial \Omega }(\rho u\;d\,x-(p+\rho u^{2})\;d\,t)&amp;=&amp;0\\\oint \limits _{\partial \Omega }(E\;d\,x-u(p+E)\;d\,t)&amp;=&amp;0\\\end{array}}\end{cases}}}" /></span></dd></dl>
+<div class="mw-heading mw-heading3"><h3 id="Аппроксимация"><span id=".D0.90.D0.BF.D0.BF.D1.80.D0.BE.D0.BA.D1.81.D0.B8.D0.BC.D0.B0.D1.86.D0.B8.D1.8F"></span>Аппроксимация</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=4" title="Редактировать раздел «Аппроксимация»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=4" title="Редактировать код раздела «Аппроксимация»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Произведен переход от дифференциальной формы записи исходной системы уравнений к интегральной форме.
+Интегральная форма записывается в виде равенства нулю интегралов по контуру (границе выделенного контрольного объёма) от векторов консервативных переменных и потоков.
+Контурный интеграл представляем в виде суммы интегралов по участкам (интервалам) <i>1-2</i>, <i>2-3</i>, <i>3-4</i>, <i>4-1</i> контрольного объёма на <b>рисунке (которого пока нет)</b> и на каждом участке аппроксимируем интеграл с использованием <a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BF%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2" title="Метод прямоугольников">метода прямоугольников</a> как произведение подынтегрального выражения
+в центре интервала на длину интервала интегрирования:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{array}{c}q_{12}\cdot (x_{2}-x_{1})-f_{12}\cdot (t_{2}-t_{1})+\\\qquad q_{23}\cdot (x_{3}-x_{2})-f_{23}\cdot (t_{3}-t_{2})+\\\qquad \qquad q_{34}\cdot (x_{4}-x_{3})-f_{34}\cdot (t_{4}-t_{3})+\\\qquad \qquad \qquad q_{41}\cdot (x_{1}-x_{4})-f_{41}\cdot (t_{1}-t_{4})=0\end{array}}\Rightarrow q_{34}=q_{12}-{\frac {\Delta t}{\Delta x}}(f_{23}-f_{41})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>12</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>f</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>12</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mspace width="2em"></mspace>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>23</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>f</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>23</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mspace width="2em"></mspace>
+                <mspace width="2em"></mspace>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>34</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>f</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>34</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mspace width="2em"></mspace>
+                <mspace width="2em"></mspace>
+                <mspace width="2em"></mspace>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>41</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>f</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>41</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x22c5;<!-- ⋅ --></mo>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+        <mo stretchy="false">&#x21d2;<!-- ⇒ --></mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <mi>t</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{array}{c}q_{12}\cdot (x_{2}-x_{1})-f_{12}\cdot (t_{2}-t_{1})+\\\qquad q_{23}\cdot (x_{3}-x_{2})-f_{23}\cdot (t_{3}-t_{2})+\\\qquad \qquad q_{34}\cdot (x_{4}-x_{3})-f_{34}\cdot (t_{4}-t_{3})+\\\qquad \qquad \qquad q_{41}\cdot (x_{1}-x_{4})-f_{41}\cdot (t_{1}-t_{4})=0\end{array}}\Rightarrow q_{34}=q_{12}-{\frac {\Delta t}{\Delta x}}(f_{23}-f_{41})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fafe1bdcc6c75df3ed901f61ebc15306d235a2a8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -6.005ex; width:79.092ex; height:13.176ex;" alt="{\displaystyle {\begin{array}{c}q_{12}\cdot (x_{2}-x_{1})-f_{12}\cdot (t_{2}-t_{1})+\\\qquad q_{23}\cdot (x_{3}-x_{2})-f_{23}\cdot (t_{3}-t_{2})+\\\qquad \qquad q_{34}\cdot (x_{4}-x_{3})-f_{34}\cdot (t_{4}-t_{3})+\\\qquad \qquad \qquad q_{41}\cdot (x_{1}-x_{4})-f_{41}\cdot (t_{1}-t_{4})=0\end{array}}\Rightarrow q_{34}=q_{12}-{\frac {\Delta t}{\Delta x}}(f_{23}-f_{41})}" /></span></dd></dl>
+<p>с учётом равенств, справедливых для <a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D0%BE%D0%B1%D1%8A%D1%91%D0%BC%D0%BE%D0%B2" class="mw-redirect" title="Метод контрольных объёмов">контрольного объёма</a>,
+построенного по декартовой расчётной сетке:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x_{3}-x_{2}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{3}-x_{2}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/871be3133e9349a7e931f52954db814de37048b7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:11.869ex; height:2.509ex;" alt="{\displaystyle x_{3}-x_{2}=0}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x_{1}-x_{4}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{1}-x_{4}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d688cd887d9d3b5bd0cc1691237fde88ffc01212" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:11.869ex; height:2.509ex;" alt="{\displaystyle x_{1}-x_{4}=0}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t_{2}-t_{1}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t_{2}-t_{1}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62355d6a18cbab0de591ea75f21d96cee9636f30" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:10.889ex; height:2.509ex;" alt="{\displaystyle t_{2}-t_{1}=0}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t_{4}-t_{3}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t_{4}-t_{3}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5eaaaf58e35d723de21e810c74597272d7978000" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:10.889ex; height:2.509ex;" alt="{\displaystyle t_{4}-t_{3}=0}" /></span></li></ul>
+<p>кроме того:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x_{2}-x_{1}=\Delta x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{2}-x_{1}=\Delta x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b13f4f7fbc8eb78fffe90e5dc9f7f86300f5c730" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:13.972ex; height:2.509ex;" alt="{\displaystyle x_{2}-x_{1}=\Delta x}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x_{4}-x_{3}=-\Delta x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{4}-x_{3}=-\Delta x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0e6aa5c34a0ab2ebd9378f78b3abbad2c23e7c41" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:15.78ex; height:2.509ex;" alt="{\displaystyle x_{4}-x_{3}=-\Delta x}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t_{3}-t_{2}=\Delta t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t_{3}-t_{2}=\Delta t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/012ca6d1d64ae43213b17e3b39b60c926c17298a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:12.502ex; height:2.509ex;" alt="{\displaystyle t_{3}-t_{2}=\Delta t}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t_{1}-t_{4}=-\Delta t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t_{1}-t_{4}=-\Delta t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d4484939f803df743f1baa4616ee1c30ea23a23" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:14.31ex; height:2.509ex;" alt="{\displaystyle t_{1}-t_{4}=-\Delta t}" /></span></li></ul>
+<p>находим значения вектора консервативных переменных на интервале <i>3-4</i>, принадлежащем новому слою:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{34}=q_{12}-{\frac {\Delta t}{\Delta x}}(f_{23}-f_{41})\qquad \Rightarrow \qquad q_{j}^{n+1}=q_{j}^{n}-{\frac {\Delta t}{\Delta x}}(f_{j+{\frac {1}{2}}}-f_{j-{\frac {1}{2}}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>34</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <mi>t</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>41</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em"></mspace>
+        <mo stretchy="false">&#x21d2;<!-- ⇒ --></mo>
+        <mspace width="2em"></mspace>
+        <msubsup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <msubsup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <mi>t</mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{34}=q_{12}-{\frac {\Delta t}{\Delta x}}(f_{23}-f_{41})\qquad \Rightarrow \qquad q_{j}^{n+1}=q_{j}^{n}-{\frac {\Delta t}{\Delta x}}(f_{j+{\frac {1}{2}}}-f_{j-{\frac {1}{2}}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74c8f6e976b40bf2f4c8642cf245d42c4e09c0cd" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.171ex; width:70.501ex; height:5.676ex;" alt="{\displaystyle q_{34}=q_{12}-{\frac {\Delta t}{\Delta x}}(f_{23}-f_{41})\qquad \Rightarrow \qquad q_{j}^{n+1}=q_{j}^{n}-{\frac {\Delta t}{\Delta x}}(f_{j+{\frac {1}{2}}}-f_{j-{\frac {1}{2}}})}" /></span></dd></dl>
+<p>В данном случае величинами с полуцелыми индексами обозначены потоки сохраняемых величин через границы расчётной ячейки за время или потоки через боковые грани (<i>2-3</i> и <i>4-1</i>) контрольного объёма. Если <b>скорость потока направлена в одну сторону с внешней нормалью</b> к боковой грани, то <b>поток отрицательный</b>, то есть вытекает из контрольного объёма и наоборот.
+</p><p>В развернутом виде:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}{\begin{array}{lll}\rho _{j}^{n+1}&amp;=&amp;\rho _{j}^{n}-{\frac {\Delta t}{\Delta x}}((\rho u)_{j+{\frac {1}{2}}}-(\rho u)_{j-{\frac {1}{2}}})\\(\rho u)_{j}^{n+1}&amp;=&amp;(\rho u)_{j}^{n}-{\frac {\Delta t}{\Delta x}}((p+\rho u^{2})_{j+{\frac {1}{2}}}-(p+\rho u^{2})_{j-{\frac {1}{2}}})\\E_{j}^{n+1}&amp;=&amp;E_{j}^{n}-{\frac {\Delta t}{\Delta x}}((u(p+E))_{j+{\frac {1}{2}}}-(u(p+E))_{j-{\frac {1}{2}}})\end{array}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtable columnalign="left left left" rowspacing="4pt" columnspacing="1em">
+                      <mtr>
+                        <mtd>
+                          <msubsup>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                              <mo>+</mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </msubsup>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msubsup>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                            </mrow>
+                          </msubsup>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+                                <mi>t</mi>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+                                <mi>x</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                          <mo stretchy="false">(</mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mi>u</mi>
+                          <msub>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                              <mo>+</mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mn>1</mn>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                          </msub>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mi>u</mi>
+                          <msub>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                              <mo>&#x2212;<!-- − --></mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mn>1</mn>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">)</mo>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <mo stretchy="false">(</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mi>u</mi>
+                          <msubsup>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                              <mo>+</mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </msubsup>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mo stretchy="false">(</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <mi>u</mi>
+                          <msubsup>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                            </mrow>
+                          </msubsup>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+                                <mi>t</mi>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+                                <mi>x</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                          <mo stretchy="false">(</mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>p</mi>
+                          <mo>+</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <msup>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <msub>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                              <mo>+</mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mn>1</mn>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                          </msub>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>p</mi>
+                          <mo>+</mo>
+                          <mi>&#x3c1;<!-- ρ --></mi>
+                          <msup>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <msub>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                              <mo>&#x2212;<!-- − --></mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mn>1</mn>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">)</mo>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msubsup>
+                            <mi>E</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                              <mo>+</mo>
+                              <mn>1</mn>
+                            </mrow>
+                          </msubsup>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msubsup>
+                            <mi>E</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                            </mrow>
+                          </msubsup>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mfrac>
+                              <mrow>
+                                <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+                                <mi>t</mi>
+                              </mrow>
+                              <mrow>
+                                <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+                                <mi>x</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                          <mo stretchy="false">(</mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>u</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>p</mi>
+                          <mo>+</mo>
+                          <mi>E</mi>
+                          <mo stretchy="false">)</mo>
+                          <msub>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                              <mo>+</mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mn>1</mn>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                          </msub>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mo stretchy="false">(</mo>
+                          <mi>u</mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>p</mi>
+                          <mo>+</mo>
+                          <mi>E</mi>
+                          <mo stretchy="false">)</mo>
+                          <msub>
+                            <mo stretchy="false">)</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                              <mo>&#x2212;<!-- − --></mo>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mfrac>
+                                  <mn>1</mn>
+                                  <mn>2</mn>
+                                </mfrac>
+                              </mrow>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">)</mo>
+                        </mtd>
+                      </mtr>
+                    </mtable>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}{\begin{array}{lll}\rho _{j}^{n+1}&amp;=&amp;\rho _{j}^{n}-{\frac {\Delta t}{\Delta x}}((\rho u)_{j+{\frac {1}{2}}}-(\rho u)_{j-{\frac {1}{2}}})\\(\rho u)_{j}^{n+1}&amp;=&amp;(\rho u)_{j}^{n}-{\frac {\Delta t}{\Delta x}}((p+\rho u^{2})_{j+{\frac {1}{2}}}-(p+\rho u^{2})_{j-{\frac {1}{2}}})\\E_{j}^{n+1}&amp;=&amp;E_{j}^{n}-{\frac {\Delta t}{\Delta x}}((u(p+E))_{j+{\frac {1}{2}}}-(u(p+E))_{j-{\frac {1}{2}}})\end{array}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f39c224fcb563c2211a203d564719fff7fee4894" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -6.521ex; margin-bottom: -0.317ex; width:60.181ex; height:14.843ex;" alt="{\displaystyle {\begin{cases}{\begin{array}{lll}\rho _{j}^{n+1}&amp;=&amp;\rho _{j}^{n}-{\frac {\Delta t}{\Delta x}}((\rho u)_{j+{\frac {1}{2}}}-(\rho u)_{j-{\frac {1}{2}}})\\(\rho u)_{j}^{n+1}&amp;=&amp;(\rho u)_{j}^{n}-{\frac {\Delta t}{\Delta x}}((p+\rho u^{2})_{j+{\frac {1}{2}}}-(p+\rho u^{2})_{j-{\frac {1}{2}}})\\E_{j}^{n+1}&amp;=&amp;E_{j}^{n}-{\frac {\Delta t}{\Delta x}}((u(p+E))_{j+{\frac {1}{2}}}-(u(p+E))_{j-{\frac {1}{2}}})\end{array}}\end{cases}}}" /></span></dd></dl>
+<p>Потоки через боковые грани, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f_{j+{\frac {1}{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f_{j+{\frac {1}{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e5d11bff05b8fb0c64e87acadf9d224f4738dec5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.171ex; width:4.831ex; height:4.009ex;" alt="{\displaystyle f_{j+{\frac {1}{2}}}}" /></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f_{j-{\frac {1}{2}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f_{j-{\frac {1}{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de6fd2c5773a28947e055887036d853d3c8b48e2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.171ex; width:4.831ex; height:4.009ex;" alt="{\displaystyle f_{j-{\frac {1}{2}}}}" /></span>определяются из решения <a href="/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B8%D0%BC%D0%B0%D0%BD%D0%B0_%D0%BE_%D1%80%D0%B0%D1%81%D0%BF%D0%B0%D0%B4%D0%B5_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D1%80%D0%B0%D0%B7%D1%80%D1%8B%D0%B2%D0%B0" title="Задача Римана о распаде произвольного разрыва">задачи о распаде произвольного разрыва</a>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Постановка_граничных_условий"><span id=".D0.9F.D0.BE.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.BA.D0.B0_.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.BD.D1.8B.D1.85_.D1.83.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B9"></span>Постановка граничных условий</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=5" title="Редактировать раздел «Постановка граничных условий»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=5" title="Редактировать код раздела «Постановка граничных условий»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Особенностью постановки и реализации граничных условий в <a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D0%BE%D0%B1%D1%8A%D1%91%D0%BC%D0%BE%D0%B2" class="mw-redirect" title="Метод контрольных объёмов">методах контрольного объёма</a>
+(в том числе и в методе Годунова) является необходимость задания или расчета потоков через грань контрольного объёма, совпадающую границей расчётной области. Для первой и последней ячеек расчётного слоя надо определить потоки массы, импульса и энергии через грани.
+</p><p>Часто для задания граничных условий вводятся «виртуальные» расчётные ячейки. Для этого слева от первой ячейки и справа от последней ячейки вводится ещё по одной дополнительной ячейке, в каждой из которых задаются такие параметры течения, чтобы при решении <a href="/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B8%D0%BC%D0%B0%D0%BD%D0%B0" class="mw-redirect" title="Задача Римана">задачи Римана</a> на боковой грани моделировались требуемые потоки.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Типы_граничных_процедур"><span id=".D0.A2.D0.B8.D0.BF.D1.8B_.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.BD.D1.8B.D1.85_.D0.BF.D1.80.D0.BE.D1.86.D0.B5.D0.B4.D1.83.D1.80"></span>Типы граничных процедур</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=6" title="Редактировать раздел «Типы граничных процедур»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=6" title="Редактировать код раздела «Типы граничных процедур»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Все предположения производятся относительно левой границы
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Неподвижная_жесткая_стенка"><span id=".D0.9D.D0.B5.D0.BF.D0.BE.D0.B4.D0.B2.D0.B8.D0.B6.D0.BD.D0.B0.D1.8F_.D0.B6.D0.B5.D1.81.D1.82.D0.BA.D0.B0.D1.8F_.D1.81.D1.82.D0.B5.D0.BD.D0.BA.D0.B0"></span>Неподвижная жесткая стенка</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=7" title="Редактировать раздел «Неподвижная жесткая стенка»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=7" title="Редактировать код раздела «Неподвижная жесткая стенка»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Главное условие&#160;— отсутствие перетекания потока массы газа через границу, что соответствует условию нулевой скорости потока на данной грани <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>U</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d868ee7902023d29169252eb059f8faff9f08fc1" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:6.044ex; height:2.176ex;" alt="{\displaystyle U=0}" /></span>
+В виртуальной ячейке тогда нужно задать следующие параметры течения:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;p_{1}\\\rho _{w}&amp;=&amp;\rho _{1}\\u_{w}&amp;=&amp;-u_{1}\\\end{array}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtable columnalign="left center left" rowspacing="4pt" columnspacing="1em">
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msub>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msub>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <msub>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                      </mtr>
+                    </mtable>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;p_{1}\\\rho _{w}&amp;=&amp;\rho _{1}\\u_{w}&amp;=&amp;-u_{1}\\\end{array}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa1d333d16127314d527d709bc84b0a73499eb90" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:16.953ex; height:9.509ex;" alt="{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;p_{1}\\\rho _{w}&amp;=&amp;\rho _{1}\\u_{w}&amp;=&amp;-u_{1}\\\end{array}}\end{cases}}}" /></span></dd></dl>
+<ul><li>«w»&#160;— параметры в виртуальной ячейке</li>
+<li>«1»&#160;— параметры в первой ячейке</li></ul>
+<p>Получаемые в <a href="/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B8%D0%BC%D0%B0%D0%BD%D0%B0" class="mw-redirect" title="Задача Римана">задаче распада разрыва</a> параметры течения на боковой грани реализуют нулевой <a href="/w/index.php?title=%D0%9F%D0%BE%D1%82%D0%BE%D0%BA_%D0%BC%D0%B0%D1%81%D1%81%D1%8B&amp;action=edit&amp;redlink=1" class="new" title="Поток массы (страница отсутствует)">поток массы</a> через эту грань.
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Резервуар_неограниченной_ёмкости"><span id=".D0.A0.D0.B5.D0.B7.D0.B5.D1.80.D0.B2.D1.83.D0.B0.D1.80_.D0.BD.D0.B5.D0.BE.D0.B3.D1.80.D0.B0.D0.BD.D0.B8.D1.87.D0.B5.D0.BD.D0.BD.D0.BE.D0.B9_.D1.91.D0.BC.D0.BA.D0.BE.D1.81.D1.82.D0.B8"></span>Резервуар неограниченной ёмкости</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=8" title="Редактировать раздел «Резервуар неограниченной ёмкости»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=8" title="Редактировать код раздела «Резервуар неограниченной ёмкости»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Этому случаю математически соответствует задание на грани значение давления <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tilde {P}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>P</mi>
+              <mo stretchy="false">&#x7e;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tilde {P}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35fe26950ee93b159b4a231946709804af1f5963" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.812ex; height:2.676ex;" alt="{\displaystyle {\tilde {P}}}" /></span>.
+Скорость втекания можно определить по формуле
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tilde {U}}=u_{1}+{\frac {{\tilde {P}}-p_{1}}{c_{1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>U</mi>
+              <mo stretchy="false">&#x7e;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>P</mi>
+                    <mo stretchy="false">&#x7e;<!-- ~ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+            <msub>
+              <mi>c</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tilde {U}}=u_{1}+{\frac {{\tilde {P}}-p_{1}}{c_{1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fc1764cdc97a469c1112c7587520d3b48d6a8f11" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.171ex; width:17.818ex; height:6.176ex;" alt="{\displaystyle {\tilde {U}}=u_{1}+{\frac {{\tilde {P}}-p_{1}}{c_{1}}}}" /></span></dd></dl>
+<p>При этом:
+</p>
+<ul><li>если <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tilde {P}}&gt;p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>P</mi>
+              <mo stretchy="false">&#x7e;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>&gt;</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tilde {P}}&gt;p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a03ae67e1f552673265795c6008eda12d7bd9a3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:7.134ex; height:3.009ex;" alt="{\displaystyle {\tilde {P}}&gt;p_{1}}" /></span>, то
+<dl><dd></dd>
+<dd></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{1}={\frac {\sqrt {\rho _{1}\cdot ((\gamma +1){\tilde {P}}+(\gamma +1)p_{1})}}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msqrt>
+              <msub>
+                <mi>&#x3c1;<!-- ρ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>&#x22c5;<!-- ⋅ --></mo>
+              <mo stretchy="false">(</mo>
+              <mo stretchy="false">(</mo>
+              <mi>&#x3b3;<!-- γ --></mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>P</mi>
+                    <mo stretchy="false">&#x7e;<!-- ~ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+              <mo>+</mo>
+              <mo stretchy="false">(</mo>
+              <mi>&#x3b3;<!-- γ --></mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <msub>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </msqrt>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{1}={\frac {\sqrt {\rho _{1}\cdot ((\gamma +1){\tilde {P}}+(\gamma +1)p_{1})}}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1844267f89ba151c239ed41e8ab4b70f3cc1879" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:35.089ex; height:7.676ex;" alt="{\displaystyle c_{1}={\frac {\sqrt {\rho _{1}\cdot ((\gamma +1){\tilde {P}}+(\gamma +1)p_{1})}}{2}}}" /></span></dd></dl></li>
+<li>если <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tilde {P}}&lt;p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>P</mi>
+              <mo stretchy="false">&#x7e;<!-- ~ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>&lt;</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tilde {P}}&lt;p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0231486309bc25cc7591dcbd200732d048a5683d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:7.134ex; height:3.009ex;" alt="{\displaystyle {\tilde {P}}&lt;p_{1}}" /></span>, то
+<dl><dd></dd>
+<dd></dd>
+<dd></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{1}={\frac {a_{1}\rho _{1}(\gamma -1)\left(1-{\frac {P}{p_{1}}}\right)}{2\gamma \left(1-\left({\frac {P}{p_{1}}}\right)^{\frac {\gamma -1}{2\gamma }}\right)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>&#x3c1;<!-- ρ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>&#x3b3;<!-- γ --></mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mi>P</mi>
+                      <msub>
+                        <mi>p</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                    </mfrac>
+                  </mrow>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x3b3;<!-- γ --></mi>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mi>P</mi>
+                          <msub>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mfrac>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi>&#x3b3;<!-- γ --></mi>
+                          <mo>&#x2212;<!-- − --></mo>
+                          <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>&#x3b3;<!-- γ --></mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{1}={\frac {a_{1}\rho _{1}(\gamma -1)\left(1-{\frac {P}{p_{1}}}\right)}{2\gamma \left(1-\left({\frac {P}{p_{1}}}\right)^{\frac {\gamma -1}{2\gamma }}\right)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98cb4429b86cf749d8b52d6b278697962247be95" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -7.338ex; width:27.27ex; height:13.009ex;" alt="{\displaystyle c_{1}={\frac {a_{1}\rho _{1}(\gamma -1)\left(1-{\frac {P}{p_{1}}}\right)}{2\gamma \left(1-\left({\frac {P}{p_{1}}}\right)^{\frac {\gamma -1}{2\gamma }}\right)}}}" /></span></dd></dl></li></ul>
+<div class="mw-heading mw-heading4"><h4 id="Втекающий_сверхзвуковой_поток"><span id=".D0.92.D1.82.D0.B5.D0.BA.D0.B0.D1.8E.D1.89.D0.B8.D0.B9_.D1.81.D0.B2.D0.B5.D1.80.D1.85.D0.B7.D0.B2.D1.83.D0.BA.D0.BE.D0.B2.D0.BE.D0.B9_.D0.BF.D0.BE.D1.82.D0.BE.D0.BA"></span>Втекающий сверхзвуковой поток</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=9" title="Редактировать раздел «Втекающий сверхзвуковой поток»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=9" title="Редактировать код раздела «Втекающий сверхзвуковой поток»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Пусть верхнее подчеркивание обозначает параметры сверхзвукового потока, тогда, если <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\bar {U}}&gt;{\bar {c}}={\sqrt {\frac {\gamma {\bar {P}}}{\bar {\rho }}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>U</mi>
+              <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>&gt;</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>c</mi>
+              <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mfrac>
+              <mrow>
+                <mi>&#x3b3;<!-- γ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>P</mi>
+                      <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>&#x3c1;<!-- ρ --></mi>
+                  <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+            </mfrac>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\bar {U}}&gt;{\bar {c}}={\sqrt {\frac {\gamma {\bar {P}}}{\bar {\rho }}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f0a6c2328c3a3517d843ad29388c19c4d422a330" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.005ex; width:15.505ex; height:7.676ex;" alt="{\displaystyle {\bar {U}}&gt;{\bar {c}}={\sqrt {\frac {\gamma {\bar {P}}}{\bar {\rho }}}}}" /></span>, то
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;{\bar {P}}\\\rho _{w}&amp;=&amp;{\bar {\rho }}\\u_{w}&amp;=&amp;{\bar {U}}\\\end{array}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtable columnalign="left center left" rowspacing="4pt" columnspacing="1em">
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mover>
+                                <mi>P</mi>
+                                <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+                              </mover>
+                            </mrow>
+                          </mrow>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mover>
+                                <mi>&#x3c1;<!-- ρ --></mi>
+                                <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+                              </mover>
+                            </mrow>
+                          </mrow>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mover>
+                                <mi>U</mi>
+                                <mo stretchy="false">&#xaf;<!-- ¯ --></mo>
+                              </mover>
+                            </mrow>
+                          </mrow>
+                        </mtd>
+                      </mtr>
+                    </mtable>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;{\bar {P}}\\\rho _{w}&amp;=&amp;{\bar {\rho }}\\u_{w}&amp;=&amp;{\bar {U}}\\\end{array}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad63f01c079fc6d5c42fbdb3934371006277c6f5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:14.573ex; height:9.509ex;" alt="{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;{\bar {P}}\\\rho _{w}&amp;=&amp;{\bar {\rho }}\\u_{w}&amp;=&amp;{\bar {U}}\\\end{array}}\end{cases}}}" /></span></dd></dl>
+<div class="mw-heading mw-heading4"><h4 id="Вытекающий_сверхзвуковой_поток"><span id=".D0.92.D1.8B.D1.82.D0.B5.D0.BA.D0.B0.D1.8E.D1.89.D0.B8.D0.B9_.D1.81.D0.B2.D0.B5.D1.80.D1.85.D0.B7.D0.B2.D1.83.D0.BA.D0.BE.D0.B2.D0.BE.D0.B9_.D0.BF.D0.BE.D1.82.D0.BE.D0.BA"></span>Вытекающий сверхзвуковой поток</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=10" title="Редактировать раздел «Вытекающий сверхзвуковой поток»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=10" title="Редактировать код раздела «Вытекающий сверхзвуковой поток»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>При этом в виртуальной ячейке задаются следующие параметры течения:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;p_{1}\\\rho _{w}&amp;=&amp;\rho _{1}\\u_{w}&amp;=&amp;u_{1}\\\end{array}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtable columnalign="left center left" rowspacing="4pt" columnspacing="1em">
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msub>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msub>
+                            <mi>&#x3c1;<!-- ρ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                      </mtr>
+                      <mtr>
+                        <mtd>
+                          <msub>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>w</mi>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                        <mtd>
+                          <mo>=</mo>
+                        </mtd>
+                        <mtd>
+                          <msub>
+                            <mi>u</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>1</mn>
+                            </mrow>
+                          </msub>
+                        </mtd>
+                      </mtr>
+                    </mtable>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;p_{1}\\\rho _{w}&amp;=&amp;\rho _{1}\\u_{w}&amp;=&amp;u_{1}\\\end{array}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43ec24001c9c646b7fa80e49ae7fe8ca1b8eaea5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.171ex; width:15.145ex; height:9.509ex;" alt="{\displaystyle {\begin{cases}{\begin{array}{lcl}p_{w}&amp;=&amp;p_{1}\\\rho _{w}&amp;=&amp;\rho _{1}\\u_{w}&amp;=&amp;u_{1}\\\end{array}}\end{cases}}}" /></span></dd></dl>
+<div class="mw-heading mw-heading2"><h2 id="Выбор_параметров_сетки"><span id=".D0.92.D1.8B.D0.B1.D0.BE.D1.80_.D0.BF.D0.B0.D1.80.D0.B0.D0.BC.D0.B5.D1.82.D1.80.D0.BE.D0.B2_.D1.81.D0.B5.D1.82.D0.BA.D0.B8"></span>Выбор параметров сетки</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=11" title="Редактировать раздел «Выбор параметров сетки»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=11" title="Редактировать код раздела «Выбор параметров сетки»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Шаг расчётной сетки по временной координате в методе Годунова можно определить из <a href="/wiki/%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9_%D0%9A%D1%83%D1%80%D0%B0%D0%BD%D1%82%D0%B0_%E2%80%94_%D0%A4%D1%80%D0%B8%D0%B4%D1%80%D0%B8%D1%85%D1%81%D0%B0_%E2%80%94_%D0%9B%D0%B5%D0%B2%D0%B8" title="Критерий Куранта — Фридрихса — Леви">критерия устойчивости Куранта&#160;— Фридрихса&#160;— Леви</a>.
+Применительно к рассматриваемой схеме это условие формулируется следующим образом:
+</p><p><i>Волны, возникающие в задаче распада произвольного разрыва в точке <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle j+{\frac {1}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>j</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle j+{\frac {1}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b78ac0facbbcf525f4876136cc33ccb6a9e0df1" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.027ex; width:5.824ex; height:5.176ex;" alt="{\displaystyle j+{\frac {1}{2}}}" /></span>, не должны за время <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Delta t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c28867ecd34e2caed12cf38feadf6a81a7ee542" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.775ex; height:2.176ex;" alt="{\displaystyle \Delta t}" /></span> достигать боковых граней <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle j+{\frac {3}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>j</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>3</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle j+{\frac {3}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8103fcd344b6d5bf036aef997652629afdd44083" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.027ex; width:5.824ex; height:5.176ex;" alt="{\displaystyle j+{\frac {3}{2}}}" /></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle j-{\frac {1}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>j</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle j-{\frac {1}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32202d37c0ae907c8d1c30fb423249f996c84e63" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.027ex; width:5.824ex; height:5.176ex;" alt="{\displaystyle j-{\frac {1}{2}}}" /></span> и искажать <a href="/wiki/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5" title="Автомодельное решение">автомодельное решение</a>.</i>
+</p><p>Реализация этого принципа приводит к следующим соотношениям:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Delta t_{j}=r{\frac {\Delta x_{j}}{\max \left(|D_{j+{\frac {1}{2}}}^{L}|,|D_{j-{\frac {1}{2}}}^{L}|\right)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>r</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mo movablelimits="true" form="prefix">max</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <msubsup>
+                    <mi>D</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>j</mi>
+                      <mo>+</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>2</mn>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>L</mi>
+                    </mrow>
+                  </msubsup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mo>,</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <msubsup>
+                    <mi>D</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>j</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>2</mn>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>L</mi>
+                    </mrow>
+                  </msubsup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta t_{j}=r{\frac {\Delta x_{j}}{\max \left(|D_{j+{\frac {1}{2}}}^{L}|,|D_{j-{\frac {1}{2}}}^{L}|\right)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e41316a64f4c9ba058fdfeeed0b8eb428a9c5221" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -6.005ex; width:31.656ex; height:9.843ex;" alt="{\displaystyle \Delta t_{j}=r{\frac {\Delta x_{j}}{\max \left(|D_{j+{\frac {1}{2}}}^{L}|,|D_{j-{\frac {1}{2}}}^{L}|\right)}}}" /></span></dd></dl>
+<p>где
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D_{j+{\frac {1}{2}}}^{L}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{j+{\frac {1}{2}}}^{L}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a2a9859a05257e60c1075a2d3db29ba59b4155e9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:5.616ex; height:4.676ex;" alt="{\displaystyle D_{j+{\frac {1}{2}}}^{L}}" /></span>&#160;— значение скорости самой левой волны в распаде разрыва;</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D_{j-{\frac {1}{2}}}^{R}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{j-{\frac {1}{2}}}^{R}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd44f0f31571ca417670498f5dce6c2b0e7a7ccd" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:5.616ex; height:4.676ex;" alt="{\displaystyle D_{j-{\frac {1}{2}}}^{R}}" /></span>&#160;— значение скорости самой правой волны в распаде разрыва;</li></ul>
+<p>В итоге мы берем:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Delta t=\min _{j}\Delta t_{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <mi>t</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">min</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Delta t=\min _{j}\Delta t_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7d56a28ee4a979578523df50d76ef8ed35ad58f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.338ex; width:13.822ex; height:4.176ex;" alt="{\displaystyle \Delta t=\min _{j}\Delta t_{j}}" /></span></dd></dl>
+<p><br />
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Литература"><span id=".D0.9B.D0.B8.D1.82.D0.B5.D1.80.D0.B0.D1.82.D1.83.D1.80.D0.B0"></span>Литература</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=12" title="Редактировать раздел «Литература»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=12" title="Редактировать код раздела «Литература»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><style data-mw-deduplicate="TemplateStyles:r141305934">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a::after,.mw-parser-output .id-lock-limited a::after,.mw-parser-output .id-lock-registration a::after,.mw-parser-output .id-lock-subscription a::after,.mw-parser-output .cs1-ws-icon a::after{content:"";width:1.1em;height:1.1em;display:inline-block;vertical-align:middle;background-position:center;background-repeat:no-repeat;background-size:contain}.mw-parser-output .id-lock-free.id-lock-free a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")}.mw-parser-output .id-lock-limited.id-lock-limited a::after,.mw-parser-output .id-lock-registration.id-lock-registration a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")}.mw-parser-output .id-lock-subscription.id-lock-subscription a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")}.mw-parser-output .cs1-ws-icon a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}html.skin-theme-clientpref-night .mw-parser-output .id-lock-free a::after,html.skin-theme-clientpref-night .mw-parser-output .id-lock-limited a::after,html.skin-theme-clientpref-night .mw-parser-output .id-lock-registration a::after,html.skin-theme-clientpref-night .mw-parser-output .id-lock-subscription a::after{filter:invert(1)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}html.skin-theme-clientpref-os .mw-parser-output .id-lock-free a::after,html.skin-theme-clientpref-os .mw-parser-output .id-lock-limited a::after,html.skin-theme-clientpref-os .mw-parser-output .id-lock-registration a::after,html.skin-theme-clientpref-os .mw-parser-output .id-lock-subscription a::after{filter:invert(1)hue-rotate(180deg)}}</style><span class="citation no-wikidata" data-wikidata-property-id="P1343">Численное решение многомерных задач газовой динамики. Альбом&#32;&#47;&#32;редактор <i>Годунов С. К. </i>.&#160;— <abbr title="Москва">М.</abbr>: Наука, 1976.&#160;— 400&#160;с.&#160;— <span class="nowrap">6500 экз.</span></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r141305934" /><span class="citation no-wikidata" data-wikidata-property-id="P1343"><i>Самарский А.А., Попов Ю.П.</i>&#32;Разностные методы решения задач газовой динамики.&#160;— <abbr title="Москва">М.</abbr>: Наука, 1992.&#160;— <span class="nowrap">2470 экз.</span></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Ссылки"><span id=".D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B8"></span>Ссылки</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit&amp;section=13" title="Редактировать раздел «Ссылки»" class="mw-editsection-visualeditor"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit&amp;section=13" title="Редактировать код раздела «Ссылки»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a rel="nofollow" class="external text" href="https://mi.mathnet.ru/umn7539">С.&#160;К.&#160;Годунов, «Разностный метод расчета ударных волн», УМН, 12:1(73) (1957), 176—177</a></li>
+<li><a rel="nofollow" class="external text" href="https://mi.mathnet.ru/msb4873">С.&#160;К.&#160;Годунов, «Разностный метод численного расчета разрывных решений уравнений гидродинамики», Матем. сб., 47(89):3 (1959), 271—306</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20110416232941/http://phorum.2in2.ru/index.php?board=9.0">Обсуждение метода Годунова</a></li></ul>
+<style data-mw-deduplicate="TemplateStyles:r137874932">.mw-parser-output .ambox{border:1px solid var(--border-color-base,#a2a9b1);border-left:10px solid #36c;background:var(--background-color-neutral-subtle,#f8f9fa);box-sizing:border-box;margin:0 10%}html body.mediawiki.skin-minerva .mw-parser-output .ambox{border-width:0 0 0 4px}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid var(--border-color-error,#b32424);background-color:var(--background-color-error-subtle,#fee7e6)}.mw-parser-output .ambox-delete{border-left:10px solid var(--border-color-error,#b32424)}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid var(--color-warning,#edab00)}.mw-parser-output .ambox-good{border-left:10px solid #66cc44}.mw-parser-output .ambox-discussion{border-left:10px solid #339966}.mw-parser-output .ambox-merge{border-left:10px solid #9932cc}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}.mw-parser-output .ambox .mbox-textsmall-div{font-size:90%}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(max-width:1366px){.mw-parser-output .ambox{margin-left:6%;margin-right:6%}}@media(max-width:719px){.mw-parser-output .ambox{margin-left:0;margin-right:0}}</style><table class="plainlinks metadata ambox ambox-style" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><span typeof="mw:File"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BA_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Улучшение статьи"><img alt="Улучшение статьи" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" data-file-width="44" data-file-height="44" /></a></span></div></td><td class="mbox-text"><div class="mbox-text-div"><b>Для улучшения этой статьи <a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:Rq/%D0%9F%D0%BE%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" title="Шаблон:Rq/Пояснения">желательно</a>:</b><ul style="margin-top: 0;">
+<li>Проставить <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BD%D0%BE%D1%81%D0%BA%D0%B8" title="Википедия:Сноски">сноски</a>, внести более точные указания на источники.</li></ul></div><div class="mbox-textsmall-div hide-when-compact">После исправления проблемы исключите её из списка. Удалите шаблон, если устранены все недостатки.</div></td></tr></tbody></table>
+<div role="navigation" class="navbox" aria-labelledby="Методы_решения_дифференциальных_уравнений" data-name="Методы решения ДУ"><table class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="colgroup" class="navbox-title" colspan="2"><span class="navbox-gear" style="float:left;text-align:left;width:5em;margin-right:0.5em"><span class="noprint skin-invert-image" typeof="mw:File"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F_%D0%94%D0%A3" title="Перейти к шаблону «Методы решения ДУ»"><img alt="Перейти к шаблону «Методы решения ДУ»" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/14px-Wikipedia_interwiki_section_gear_icon.svg.png" decoding="async" width="14" height="14" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/21px-Wikipedia_interwiki_section_gear_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/28px-Wikipedia_interwiki_section_gear_icon.svg.png 2x" data-file-width="14" data-file-height="14" /></a></span></span><div id="Методы_решения_дифференциальных_уравнений" style="font-size:114%;margin:0 5em">Методы решения <a href="/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5" title="Дифференциальное уравнение">дифференциальных уравнений</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1px">Сеточные методы</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1px">Конечноэлементные методы</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2" title="Метод конечных элементов">Метод конечных элементов</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%B0%D0%BB%D1%91%D1%80%D0%BA%D0%B8%D0%BD%D0%B0" title="Метод Галёркина">Метод Галёркина</a></li>
+<li><a href="/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D1%8B%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%B0%D0%BB%D1%91%D1%80%D0%BA%D0%B8%D0%BD%D0%B0" title="Разрывный метод Галёркина">Разрывный метод Галёркина</a></li>
+<li><a href="/wiki/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2" title="Многомасштабный метод конечных элементов">Многомасштабный метод конечных элементов</a></li>
+<li><a href="/wiki/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%81%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4" title="Многосеточный метод">Многосеточный метод</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1px">Другие методы</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9" title="Метод конечных разностей">Метод конечных разностей</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D0%BE%D0%B1%D1%8A%D1%91%D0%BC%D0%BE%D0%B2" title="Метод конечных объёмов">Метод конечных объёмов</a></li>
+<li><a class="mw-selflink selflink">Метод Годунова</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0" title="Метод граничного элемента">Метод граничного элемента</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1px">Не сеточные методы</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D1%85_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2" title="Метод дискретных элементов">Метод дискретного элемента</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BF%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%BD%D1%8B%D1%85_%D0%BA%D0%BB%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D1%85_%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%B2" title="Метод подвижных клеточных автоматов">Метод подвижных клеточных автоматов</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D1%87%D0%B0%D1%81%D1%82%D0%B8%D1%86_%D0%B2_%D1%8F%D1%87%D0%B5%D0%B9%D0%BA%D0%B0%D1%85" title="Метод частиц в ячейках">Метод частиц в ячейках</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D1%80%D0%B5%D1%88%D1%91%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D1%85_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9_%D0%91%D0%BE%D0%BB%D1%8C%D1%86%D0%BC%D0%B0%D0%BD%D0%B0" title="Метод решёточных уравнений Больцмана">Метод решёточных уравнений Больцмана</a></li></ul>
+</div></td></tr></tbody></table></div></div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=0" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Источник — <a dir="ltr" href="https://ru.wikipedia.org/w/index.php?title=Метод_Годунова&amp;oldid=122144569">https://ru.wikipedia.org/w/index.php?title=Метод_Годунова&amp;oldid=122144569</a></div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Служебная:Категории">Категории</a>: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A7%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B8_%D1%81%D0%BF%D0%BB%D0%BE%D1%88%D0%BD%D1%8B%D1%85_%D1%81%D1%80%D0%B5%D0%B4" title="Категория:Численные методы механики сплошных сред">Численные методы механики сплошных сред</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B8%D0%B4%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0" title="Категория:Вычислительная гидродинамика">Вычислительная гидродинамика</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A3%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" title="Категория:Уравнения сохранения">Уравнения сохранения</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Скрытые категории: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D0%B1%D0%B5%D0%B7_%D1%81%D0%BD%D0%BE%D1%81%D0%BE%D0%BA" title="Категория:Википедия:Статьи без сносок">Википедия:Статьи без сносок</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81_%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%B0%D0%BC%D0%B8_%D0%BD%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%BE%D0%B2_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83" title="Категория:Википедия:Статьи с шаблонами недостатков по алфавиту">Википедия:Статьи с шаблонами недостатков по алфавиту</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Навигация</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Персональные инструменты</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anonuserpage" class="mw-list-item"><span title="Страница участника для моего IP">Вы не представились системе</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]" accesskey="n"><span>Обсуждение</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]" accesskey="y"><span>Вклад</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4+%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4+%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o"><span>Войти</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-namespaces-label"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Пространства имён</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" title="Просмотреть контентную страницу [c]" accesskey="c"><span>Статья</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" rel="discussion" title="Обсуждение основной страницы [t]" accesskey="t"><span>Обсуждение</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown vector-menu" aria-labelledby="p-variants-label"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	>
+	<label
+		id="p-variants-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">русский</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-views-label"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Просмотры</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected mw-list-item"><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0"><span>Читать</span></a></li><li id="ca-ve-edit" class="mw-list-item"><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;veaction=edit" title="Редактировать данную страницу [v]" accesskey="v"><span>Править</span></a></li><li id="ca-edit" class="collapsible mw-list-item"><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=edit" title="Править исходный текст этой страницы [e]" accesskey="e"><span>Править код</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=history" title="Журнал изменений страницы [h]" accesskey="h"><span>История</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown vector-menu" aria-labelledby="p-cactions-label"  title="Больше возможностей" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Ещё</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<h3 >Поиск</h3>
+	<form action="/w/index.php" id="searchform" class="vector-search-box-form">
+		<div id="simpleSearch"
+			class="vector-search-box-inner"
+			 data-search-loc="header-navigation">
+			<input class="vector-search-box-input"
+				 type="search" name="search" placeholder="Искать в Википедии" aria-label="Искать в Википедии" autocapitalize="sentences" title="Искать в Википедии [f]" accesskey="f" id="searchInput"
+			>
+			<input type="hidden" name="title" value="Служебная:Поиск">
+			<input id="mw-searchButton"
+				 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Найти страницы, содержащие указанный текст" value="Найти">
+			<input id="searchButton"
+				 class="searchButton" type="submit" name="go" title="Перейти к странице, имеющей в точности такое название" value="Перейти">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel" class="vector-legacy-sidebar">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+			title="Перейти на заглавную страницу"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu-portal portal vector-menu" aria-labelledby="p-navigation-label"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Навигация</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]" accesskey="z"><span>Заглавная страница</span></a></li><li id="n-content" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"><span>Содержание</span></a></li><li id="n-featured" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]" accesskey="x"><span>Случайная статья</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-participation" class="mw-portlet mw-portlet-participation vector-menu-portal portal vector-menu" aria-labelledby="p-participation-label"  >
+	<h3
+		id="p-participation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Участие</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-bug_in_article" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5"><span>Как править статьи</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li id="n-forum" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]" accesskey="r"><span>Свежие правки</span></a></li><li id="n-newpages" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B"><span>Служебные страницы</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu-portal portal vector-menu" aria-labelledby="p-tb-label"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Инструменты</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" title="Список всех страниц, ссылающихся на данную [j]" accesskey="j"><span>Ссылки сюда</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" rel="nofollow" title="Последние изменения в страницах, на которые ссылается эта страница [k]" accesskey="k"><span>Связанные правки</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;oldid=122144569" title="Постоянная ссылка на эту версию страницы"><span>Постоянная ссылка</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=info" title="Подробнее об этой странице"><span>Сведения о странице</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A6%D0%B8%D1%82%D0%B0%D1%82%D0%B0&amp;page=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;id=122144569&amp;wpFormIdentifier=titleform" title="Информация о том, как цитировать эту страницу"><span>Цитировать страницу</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:UrlShortener&amp;url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259C%25D0%25B5%25D1%2582%25D0%25BE%25D0%25B4_%25D0%2593%25D0%25BE%25D0%25B4%25D1%2583%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25B0"><span>Получить короткий URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:QrCode&amp;url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259C%25D0%25B5%25D1%2582%25D0%25BE%25D0%25B4_%25D0%2593%25D0%25BE%25D0%25B4%25D1%2583%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25B0"><span>Скачать QR-код</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu-portal portal vector-menu" aria-labelledby="p-coll-print_export-label"  >
+	<h3
+		id="p-coll-print_export-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Печать/экспорт</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:DownloadAsPdf&amp;page=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;action=show-download-screen" title="Скачать эту страницу как файл PDF"><span>Скачать как PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;printable=yes" title="Версия этой страницы для печати [p]" accesskey="p"><span>Версия для печати</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+<nav id="p-wikibase-otherprojects" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal vector-menu" aria-labelledby="p-wikibase-otherprojects-label"  >
+	<h3
+		id="p-wikibase-otherprojects-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">В других проектах</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4291826" title="Ссылка на связанный элемент репозитория данных [g]" accesskey="g"><span>Элемент Викиданных</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu-portal portal vector-menu" aria-labelledby="p-lang-label"  >
+	<h3
+		id="p-lang-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">На других языках</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Godunov%27s_scheme" title="Godunov&#039;s scheme — английский" lang="en" hreflang="en" data-title="Godunov&#039;s scheme" data-language-autonym="English" data-language-local-name="английский" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Sch%C3%A9ma_de_Godounov" title="Schéma de Godounov — французский" lang="fr" hreflang="fr" data-title="Schéma de Godounov" data-language-autonym="Français" data-language-local-name="французский" class="interlanguage-link-target"><span>Français</span></a></li>
+		</ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4291826#sitelinks-wikipedia" title="Править ссылки на другие языки" class="wbc-editpage">Править ссылки</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> Эта страница в последний раз была отредактирована 7 мая 2022 в 13:51.</li>
+	<li id="footer-info-copyright">Текст доступен по <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/4.0/deed.ru">лицензии Creative Commons «С указанием авторства — С сохранением условий» (CC BY-SA)</a>; в отдельных случаях могут действовать дополнительные условия.
+<span class="noprint">Подробнее см. <a class="external text" href="https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ru">Условия использования</a>.</span><br />
+Wikipedia®&#160;— зарегистрированный товарный знак некоммерческой организации <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/ru/">«Фонд Викимедиа» (Wikimedia Foundation, Inc.)</a></li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru">Политика конфиденциальности</a></li>
+	<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание Википедии</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Отказ от ответственности</a></li>
+	<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru">Кодекс поведения</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Разработчики</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Заявление о куки</a></li>
+	<li id="footer-places-mobileview"><a href="//ru.m.wikipedia.org/w/index.php?title=%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Мобильная версия</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet vector-menu-portal portal" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.log.warn("This page is using the deprecated ResourceLoader module \"codex-search-styles\".\n[1.43] Use a CodexModule with codexComponents to set your specific components used: https://www.mediawiki.org/wiki/Codex#Using_a_limited_subset_of_components");mw.config.set({"wgHostname":"mw-web.eqiad.main-7fd96bd568-w5s8m","wgBackendResponseTime":214,"wgPageParseReport":{"limitreport":{"cputime":"0.228","walltime":"0.361","ppvisitednodes":{"value":1393,"limit":1000000},"postexpandincludesize":{"value":20416,"limit":2097152},"templateargumentsize":{"value":934,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":9596,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  205.227      1 -total"," 60.80%  124.778      1 Шаблон:Rq"," 57.75%  118.511      1 Шаблон:Ambox"," 29.06%   59.643      2 Шаблон:Книга"," 10.00%   20.525      1 Шаблон:Методы_решения_ДУ","  8.34%   17.115      1 Шаблон:Навигационная_таблица","  8.19%   16.815      1 Шаблон:Tl","  3.55%    7.290     16 Шаблон:Rq/","  2.81%    5.771      2 Шаблон:Указание_места_в_библиоссылке","  2.24%    4.607      2 Шаблон:Rq/topics/getcategory"]},"scribunto":{"limitreport-timeusage":{"value":"0.080","limit":"10.000"},"limitreport-memusage":{"value":1413138,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-7fd96bd568-pk6rt","timestamp":"20250315210738","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"\u041c\u0435\u0442\u043e\u0434 \u0413\u043e\u0434\u0443\u043d\u043e\u0432\u0430","url":"https:\/\/ru.wikipedia.org\/wiki\/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%93%D0%BE%D0%B4%D1%83%D0%BD%D0%BE%D0%B2%D0%B0","sameAs":"http:\/\/www.wikidata.org\/entity\/Q4291826","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q4291826","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"\u0424\u043e\u043d\u0434 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2010-01-12T18:41:26Z"}</script>
+</body>
+</html>
