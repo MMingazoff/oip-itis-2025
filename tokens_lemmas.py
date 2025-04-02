@@ -16,7 +16,7 @@ russian_stopwords = set(stopwords.words("russian"))
 def clean_text_from_html(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         soup = BeautifulSoup(file, "html.parser")
-        return soup.get_text()
+        return soup.get_text(separator=' ')
 
 def tokenize(text):
     words = word_tokenize(text.lower())
