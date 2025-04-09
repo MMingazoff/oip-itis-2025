@@ -27,3 +27,14 @@ python tokens_lemmas.py
 
 Токены для каждого документа из `/outputs` находятся в папке `/tokens_per_doc`<br/>
 Леммы для каждого документа из `/outputs` находятся в папке `/lemmas_per_doc`. Строятся на основе токенов.
+
+## Задание 3
+Для запуска
+
+```commandline
+pip install -r requirements.txt
+python search_engine.py
+```
+
+Леммы взяты со второго задания (которые были прикреплены к заданию на edu). Для запуска поместить в одну директорию с search_engine.py
+Файл с инвертированным индексом inverted_index.txt
