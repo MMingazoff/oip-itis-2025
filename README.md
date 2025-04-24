@@ -38,3 +38,14 @@ python search_engine.py
 
 Леммы взяты со второго задания (которые были прикреплены к заданию на edu). Для запуска поместить в одну директорию с search_engine.py
 Файл с инвертированным индексом inverted_index.txt
+
+## Задание 4
+Для запуска
+
+```commandline
+pip install -r requirements.txt
+python tf_idf.py
+```
+
+В папке `/tfidf_terms` находятся значения idf и tf-idf для терминов</br>
+В папке `/tfidf_lemmas` находятся значения idf и tf-idf для лемм
