@@ -2,3 +2,7 @@ requests
 beautifulsoup4
 pymorphy2
 nltk
+sentence-transformers
+faiss-cpu
+numpy
+flask
